@@ -13,7 +13,7 @@ export default function Avaliacao() {
                     </div>
                 </div>
                 <div>
-                    <input type="number" id="avaliacao" name="avaliacao" placeholder="Avaliação:" required className="w-full border border-gray-300 rounded-md p-2" />
+                    <input type="number" id="avaliacao" name="avaliacao" placeholder="Avaliação:" required className="w-full border border-gray-300 rounded-md p-2" min="1" max="5"/>
                 </div>
                 <div>
                     <textarea name="mensagem" id="mensagem" placeholder="Mensagem:" className="w-full border border-gray-300 rounded-md p-2" cols={30} rows={5} required></textarea>
