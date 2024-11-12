@@ -1,5 +1,6 @@
 import Avaliacao from "@/components/Avaliacao/Avaliacao";
 import FonteEnergia from "@/components/FonteEnergia/FonteEnergia";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import Integrantes from "@/components/Integrantes/Integrantes";
@@ -14,6 +15,7 @@ export default function Home() {
       <Problema/>
       <Integrantes/>
       <Avaliacao/>
+      <Footer/>
     </>
   );
 }
