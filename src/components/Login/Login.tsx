@@ -1,5 +1,6 @@
 import Image from "next/image"
 import CasaSustentavel from "../../../public/img/imagem-login-cadastro.svg"
+import Link from "next/link"
 
 export default function Login() {
     return (
@@ -23,7 +24,7 @@ export default function Login() {
                 <div className="flex justify-center mt-6">
                     <button type="submit" className="text-white py-2 px-4 rounded-xl text-xl bg-green-500">Entrar</button>
                 </div>
-                <p className="text-center mt-6 text-[#313131] font-semibold text-lg">Não possui uma conta?<a href="/cadastro" className="text-black"> Cadastre-se</a></p>
+                <p className="text-center mt-6 text-[#313131] font-semibold text-lg">Não possui uma conta?<Link href="/cadastro" className="text-black"> Cadastre-se</Link></p>
 
             </form>
     </section>
