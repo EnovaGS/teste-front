@@ -1,30 +1,32 @@
-import Image from "next/image"
-import Logo from "../../../public/img/logo.svg"
+import Image from "next/image";
+import Logo from "../../../public/img/logo.svg";
 
 export default function Footer() {
     return (
-      <footer className="flex flex-col items-center py-10 bg-[#1A2B41]">
-            <div className="flex items-center lg:space-x-3">
-                <Image src={Logo} alt="Logo da Enova"/>
-                <h1 className="text-white font-bold text-4xl">Enova</h1>
+        <footer className="flex flex-col items-center py-10 bg-[#1A2B41] text-[#D1E8FF] border-t border-gray-600">
+            <div className="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-3 mb-6">
+                <Image src={Logo} alt="Logo da Enova" />
+                <h1 className="text-white font-bold text-2xl sm:text-4xl">Enova</h1>
             </div>
             <div>
-                <ul className="flex justify-center items-center  space-x-4 lg:space-x-8">
-                    <li><a href="#" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg">About</a></li>
-                    <li><a href="#" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg">Carrers</a></li>
-                    <li><a href="#" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg">Press</a></li>
-                    <li><a href="#" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg">Customer Care</a></li>
-                    <li><a href="#" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg">Services</a></li>
+                <ul className="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-8 mb-6">
+                    <li><a href="#" className="text-[#D1E8FF] hover:text-[#AFCBFF] text-base lg:text-lg">About</a></li>
+                    <li><a href="#" className="text-[#D1E8FF] hover:text-[#AFCBFF] text-base lg:text-lg">Careers</a></li>
+                    <li><a href="#" className="text-[#D1E8FF] hover:text-[#AFCBFF] text-base lg:text-lg">Press</a></li>
+                    <li><a href="#" className="text-[#D1E8FF] hover:text-[#AFCBFF] text-base lg:text-lg">Customer Care</a></li>
+                    <li><a href="#" className="text-[#D1E8FF] hover:text-[#AFCBFF] text-base lg:text-lg">Services</a></li>
                 </ul>
             </div>
             <div>
-                <ul className="flex justify-between gap-0 items-center">
-                    <li className="mr-4"><a href="" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg opacity-45 ">Terms & Conditions </a></li>
-                    <li className="mr-4"><a href="" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg opacity-45">Privacy Policy |</a></li>
-                    <li className="mr-4"><a href="" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg opacity-45">Accessibility |</a></li>
-                    <li className="mr-4"><a href="" className="text-white hover:text-gray-400 outline-none text-base lg:text-lg opacity-45">Legal |</a></li>
+                <ul className="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-4 lg:space-x-6 text-sm opacity-70 mb-4">
+                    <li><a href="#" className="hover:text-[#AFCBFF]">Termos & Condições</a></li>
+                    <li><a href="#" className="hover:text-[#AFCBFF]">Política de Privacidade</a></li>
+                    <li><a href="#" className="hover:text-[#AFCBFF]">Acessibilidade</a></li>
                 </ul>
             </div>
-      </footer>
-    )
-  } 
+            <div className="text-xs text-gray-400 mt-4 text-center">
+                © {new Date().getFullYear()} Enova. Todos os direitos reservados.
+            </div>
+        </footer>
+    );
+}
